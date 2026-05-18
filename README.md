@@ -26,25 +26,57 @@ Our upstream analysis was fully structured and processed using standard tools in
 5. **Transcript Quantification (`featureCounts`)**
    * Assigned mapped reads to genomic features to generate a clean, raw count matrix. The optimization achieved highly efficient assigned read rates (>60-70%), creating a reliable matrix for downstream R processing.
 
-### Phase 2: R-Based Downstream Analysis & Enrichment
+### Phase 2: R-Based Downstream Analysis
 Once the raw count matrix was generated, the analysis shifted to an R environment for statistical processing and advanced data visualization:
 
 6. **Differential Gene Expression (DGE) with `DESeq2`**
    * Normalization of raw counts and calculation of Log2 Fold Changes to identify significantly altered genes under treatment conditions.
      <img width="1041" height="547" alt="Volcano plot" src="https://github.com/user-attachments/assets/76cb9bb5-e4a9-4a0e-ac52-cbd86d1fd10c" />
-* **Data Visualization via Hierarchical Clustering (`pheatmap`):** To complement the statistical analysis, we performed hierarchical clustering on the top 50 differentially expressed genes (DEGs) based on their variance-stabilizing transformation (vst) counts. This allowed us to generate an expression heatmap that visually demonstrates clear and consistent gene expression profile shifts (Z-scores) between the OPWP-treated samples and the control group, ensuring data quality and distinct sample clustering.
+  **Data Visualization via Hierarchical Clustering `pheatmap`**
+* We performed hierarchical clustering on the top 10 differentially expressed genes (DEGs) to visually confirm clear and consistent Z-score expression shifts between the OPWP-treated group and the control samples.
   <img width="1152" height="783" alt="Heatmap" src="https://github.com/user-attachments/assets/406fc654-0239-46d2-8533-39fa5a9dfe62" />
+7. **Gene Set Enrichment Analysis (GSEA)**
+   * Performed functional enrichment analysis using GSEA based on the MSigDB Hallmark gene sets. This approach allowed us to profile global biological pathways and metabolic shifts comprehensively without relying on arbitrary p-value cutoffs, ensuring a robust representation of the cellular changes induced by the treatment. *(Source code available in the scripts folder)*
+
 ---
 
-## 📊 Key Laboratory Findings & Visualizations
+## 📊 Laboratory Visualizations (Generated using R)
 
-Our pipeline successfully captured strong transcriptomic signals showing that OPWP treatment induces major metabolic and survival stress in cancer cells:
+All downstream graphical plots and biological profiling visualizations were programmatically generated within the R environment utilizing `ggplot2` and specialized enrichment plotting packages.
 
-### 1. Upregulation of Oxidative Phosphorylation
-GSEA analysis revealed a highly significant upregulation of the **Oxidative Phosphorylation** pathway ($NES = 2.05$, $FDR = 1.56 \times 10^{-4}$), demonstrating a major stimulation of mitochondrial respiratory chain functions.
+### 1. Core Pathway Analysis (GSEA Enrichment Plot)
+Gene Set Enrichment Analysis (GSEA) revealed a highly significant upregulation of the **Oxidative Phosphorylation** pathway ($NES = 2.05655$, $FDR = 1.56 \times 10^{-4}$), demonstrating a major stimulation of mitochondrial respiratory chain functions under OPWP treatment.
 
-### 2. Global Functional Enrichment (Top Pathways)
-Using specialized `ggplot2` visualizations, we captured the top 12 pathways for both Upregulated and Downregulated genes, shedding light on extensive **DNA Damage Repair** responses (such as P53 Signaling and Mismatch Repair) activated by the treatment.
+<details>
+<summary><b>👁️ View GSEA Enrichment Plot</b></summary>
+
+##### **Visual Result:**
+> **Note:** Replace `results/gsea_oxidative.png` with your actual uploaded GSEA plot path in the repository.
+![GSEA Hallmark Oxidative Phosphorylation](results/gsea_oxidative.png)
+</details>
+
+---
+
+### 2. Global Pathway Enrichment (Top 12 Pathways via `ggplot2`)
+Advanced horizontal `ggplot2` dot plots were generated to visualize the top 12 Upregulated and Downregulated hallmark pathways based on their Normalized Enrichment Scores (NES) and FDR q-values.
+
+#### 🟢 Top 12 Upregulated Pathways
+<details>
+<summary><b>📊 View Upregulated Dot Plot</b></summary>
+
+##### **Visual Result:**
+> **Note:** Replace `results/upregulated_plot.png` with your actual image path.
+![Top 12 Upregulated Pathways](results/upregulated_plot.png)
+</details>
+
+#### 🔵 Top 12 Downregulated Pathways
+<details>
+<summary><b>📊 View Downregulated Dot Plot</b></summary>
+
+##### **Visual Result:**
+> **Note:** Replace `results/downregulated_plot.png` with your actual image path.
+![Top 12 Downregulated Pathways](results/downregulated_plot.png)
+</details>
 
 ---
 
