@@ -1,5 +1,3 @@
-[countdata.csv](https://github.com/user-attachments/files/27968363/countdata.csv)[countdata.txt](https://github.com/user-attachments/files/27968339/countdata.txt)# Transcriptomic-Analysis-of-Colorectal-Cancer-Cells-Treated-with-Oil-Production-Waste-Products-OPWPs-
-An end-to-end RNA-seq pipeline replicating transcriptomic changes in colorectal cancer cells treated with olive mill waste extracts (OPWPs).
 # End-to-End RNA-seq Pipeline: Transcriptomic Profiling of Colorectal Cancer Cells Under OPWP Treatment
 
 ## 📌 Project Overview
