@@ -1,4 +1,4 @@
-# Transcriptomic-Analysis-of-Colorectal-Cancer-Cells-Treated-with-Oil-Production-Waste-Products-OPWPs-
+[countdata.csv](https://github.com/user-attachments/files/27968363/countdata.csv)[countdata.txt](https://github.com/user-attachments/files/27968339/countdata.txt)# Transcriptomic-Analysis-of-Colorectal-Cancer-Cells-Treated-with-Oil-Production-Waste-Products-OPWPs-
 An end-to-end RNA-seq pipeline replicating transcriptomic changes in colorectal cancer cells treated with olive mill waste extracts (OPWPs).
 # End-to-End RNA-seq Pipeline: Transcriptomic Profiling of Colorectal Cancer Cells Under OPWP Treatment
 
@@ -52,7 +52,8 @@ The Volcano Plot programmatically visualizes the global transcriptomic changes, 
 ##### **Description:**
 We performed hierarchical clustering utilizing `pheatmap` on the top 10 differentially expressed genes (DEGs) to visually confirm clear, distinct, and consistent $Z$-score expression profile shifts between the OPWP-treated group and the control samples.
 </details>
-7. **Gene Set Enrichment Analysis (GSEA)**
+7. 🌟 **Gene Set Enrichment Analysis (GSEA)**
+
    * Performed functional enrichment analysis using GSEA based on the MSigDB Hallmark gene sets. This approach allowed us to profile global biological pathways and metabolic shifts comprehensively without relying on arbitrary p-value cutoffs, ensuring a robust representation of the cellular changes induced by the treatment. *(Source code available in the scripts folder)*
 
 ---
@@ -97,12 +98,3 @@ Advanced horizontal `ggplot2` dot plots were generated to visualize the top 12 U
 > **Note:** Replace `results/downregulated_plot.png` with your actual image path.
 ![Top 12 Downregulated Pathways](results/downregulated_plot.png)
 </details>
-
-
----
-
-## 📁 Repository Structure
-* `📁 data/` : Contains the structured raw count matrix generated from featureCounts.
-* `📁 scripts/` : Contains the complete, reproducible R scripts used for plotting and analysis.
-* `📁 results/` : Contains high-resolution plots (Dot plots and Enrichment plots).
-
