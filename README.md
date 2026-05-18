@@ -31,6 +31,13 @@ Once the raw count matrix was generated, the analysis shifted to an R environmen
 
 6. **Differential Gene Expression (DGE) with `DESeq2`**
    * Normalization of raw counts and calculation of Log2 Fold Changes to identify significantly altered genes under treatment conditions.
+   * ##### **Visual Result:**
+> **Note:** Replace `results/volcano_plot.png` with your actual volcano plot image path.
+![Volcano Plot of DEGs](results/volcano_plot.png)
+
+##### **Description:**
+The Volcano Plot programmatically visualizes the global transcriptomic changes, plotting the statistical significance ($-\log_{10} p\text{-value}$) against the magnitude of change ($\log_{2} \text{Fold Change}$). This highlights the significantly upregulated and downregulated genes in colorectal cancer cells following OPWP treatment.
+</details>
      <img width="1041" height="547" alt="Volcano plot" src="https://github.com/user-attachments/assets/76cb9bb5-e4a9-4a0e-ac52-cbd86d1fd10c" />
   **Data Visualization via Hierarchical Clustering `pheatmap`**
 * We performed hierarchical clustering on the top 10 differentially expressed genes (DEGs) to visually confirm clear and consistent Z-score expression shifts between the OPWP-treated group and the control samples.
