@@ -65,22 +65,22 @@ Advanced horizontal `ggplot2` dot plots were generated to visualize the top 12 U
 #### 🟢 Top 12 Upregulated Pathways
 <details>
 <summary><b>📊 View Upregulated Dot Plot</b></summary>
-
+<img width="1041" height="547" alt="Rplot04" src="https://github.com/user-attachments/assets/882d93ea-6d3c-495f-84d0-2a6d049222a7" />
 ##### **Visual Result:**
 > **Note:** Replace `results/upregulated_plot.png` with your actual image path.
 ![Top 12 Upregulated Pathways](results/upregulated_plot.png)
 </details>
-<img width="1041" height="547" alt="Rplot04" src="https://github.com/user-attachments/assets/882d93ea-6d3c-495f-84d0-2a6d049222a7" />
+
 
 #### 🔵 Top 12 Downregulated Pathways
 <details>
 <summary><b>📊 View Downregulated Dot Plot</b></summary>
-
+<img width="1041" height="547" alt="Rplot03" src="https://github.com/user-attachments/assets/c7711964-5b16-40a2-bf55-d6dc57947446" />
 ##### **Visual Result:**
 > **Note:** Replace `results/downregulated_plot.png` with your actual image path.
 ![Top 12 Downregulated Pathways](results/downregulated_plot.png)
 </details>
-<img width="1041" height="547" alt="Rplot03" src="https://github.com/user-attachments/assets/c7711964-5b16-40a2-bf55-d6dc57947446" />
+
 
 ---
 
