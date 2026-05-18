@@ -49,7 +49,8 @@ Gene Set Enrichment Analysis (GSEA) revealed a highly significant upregulation o
 
 <details>
 <summary><b>👁️ View GSEA Enrichment Plot</b></summary>
-![Uploading لا.png…]()
+<img width="2377" height="2557" alt="لا" src="https://github.com/user-attachments/assets/00db32ec-7e33-4918-be45-a9ae6eea94f0" />
+
 
 ##### **Visual Result:**
 > **Note:** Replace `results/gsea_oxidative.png` with your actual uploaded GSEA plot path in the repository.
