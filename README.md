@@ -31,9 +31,9 @@ Once the raw count matrix was generated, the analysis shifted to an R environmen
 
 6. **Differential Gene Expression (DGE) with `DESeq2`**
    * Normalization of raw counts and calculation of Log2 Fold Changes to identify significantly altered genes under treatment conditions.
-7. **Gene Set Enrichment Analysis (GSEA)**
-   * Performed functional annotation based on the MSigDB Hallmark gene sets to extract core biological pathways significantly affected.
-
+     <img width="1041" height="547" alt="Volcano plot" src="https://github.com/user-attachments/assets/76cb9bb5-e4a9-4a0e-ac52-cbd86d1fd10c" />
+* **Data Visualization via Hierarchical Clustering (`pheatmap`):** To complement the statistical analysis, we performed hierarchical clustering on the top 50 differentially expressed genes (DEGs) based on their variance-stabilizing transformation (vst) counts. This allowed us to generate an expression heatmap that visually demonstrates clear and consistent gene expression profile shifts (Z-scores) between the OPWP-treated samples and the control group, ensuring data quality and distinct sample clustering.
+  <img width="1152" height="783" alt="Heatmap" src="https://github.com/user-attachments/assets/406fc654-0239-46d2-8533-39fa5a9dfe62" />
 ---
 
 ## 📊 Key Laboratory Findings & Visualizations
