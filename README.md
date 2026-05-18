@@ -31,11 +31,6 @@ Once the raw count matrix was generated, the analysis shifted to an R environmen
 
 6. **Differential Gene Expression (DGE) with `DESeq2`**
    * Normalization of raw counts and calculation of Log2 Fold Changes to identify significantly altered genes under treatment conditions.
-
----
-
-### 📥 Differential Expression Visualizations (Generated via R)
-
 #### 🌋 A. Differential Expression Landscape (Volcano Plot)
 <details>
 <summary><b>👁️ View Volcano Plot</b></summary>
